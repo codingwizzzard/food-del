@@ -9,7 +9,7 @@ console.log(process.env.STRIPE_SECRET_KEY)
 const placeOrder = async (req, res) => {
     let { userId, items, amount, address } = req.body
 
-    const frontend_url = "http://localhost:3000"
+    const frontend_url = "https://food-del-frontend-hucu.onrender.com"
 
     try {
         const newOrder = new orderModel({
